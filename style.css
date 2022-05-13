@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    font-family: -apple-system, 'Helvetica Neue';
+    display: grid; 
+    grid-template-columns: 175px 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 10px;
+}
+
+.image {
+    order: -1;
+    align-self: center;
+    margin: 1em;
+    
+    border-radius: 5%;
+    object-fit: cover;
+
+    width: 125px;
+    height: 168px; 
+}
+
+.small-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    grid-column-start: 2;
+    
+    margin-top: -135px;
+    margin-left: -.3em;
+}
+
+.main-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    grid-column-start: 2;
+    margin-top: -185px;
+}
+
+.location {
+    align-self: center;    
+}
+
+.google-maps-url {
+    align-self: center;
+    margin-left: .80em;
+}
+
+.title {
+    margin-bottom: -5px;
+}
+
+.dates {
+    font-size: 1em;
+    margin-bottom: -10px;
+}
+
+.description {
+    font-size: .90em;
+} 
